@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jsonp</title>
+    <link rel="stylesheet" href="https://ru.wikipedia.org/w/load.php?debug=false&lang=ru&modules=ext.flaggedRevs.basic%7Cext.pygments%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.shared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init&only=styles&skin=vector">
+    <link rel="stylesheet" href="https://ru.wikipedia.org/w/load.php?debug=false&lang=ru&modules=site&only=styles&skin=vector">
+    <style>
+        .controls {
+            text-align: center;
+        }
+
+        .article {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 50px auto;
+            width: 800px;
+        }
+    </style>
+
+    <script src="jsonp.js"></script>
+</head>
+<body>
+
+<div class="controls">
+    <label>Название статьи <input type="text" value="Stack Overflow"></label>
+    <button>Найти</button>
+</div>
+
+<div class="article" id="content"></div>
+
+</body>
+</html>
